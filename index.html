@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--UNICONS-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--SWIPER CSS-->
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+        
+        <!--CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/index.css">
+
+        <title>Vraj Parekh | Portfolio</title>
+    </head>
+    <body>
+        <!--HEADER-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Vraj Parekh</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i>About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i>Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i>Projects                                
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i>Contact                               
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/vraj-parekh-2b9a68284?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://x.com/ParekhVraj45341" target="_blank" class="home__social-icon">
+                                <i class="uil uil-twitter-alt"></i>
+                            </a>
+                            <a href="https://github.com/vrajparekh012/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                          <svg
+                          class="home__blob"
+                          viewBox="0 0 300 380"
+                          xmlns="http://www.w3.org/2000/svg">
+                        <!-- Mask -->
+                         <mask id="roundedMask">
+                          <rect
+                          x="0"
+                          y="0"
+                          width="300"
+                          height="380"
+                          rx="40"
+                          ry="40"
+                          fill="white"/>
+                        </mask>
+    <!-- Background shape -->
+    <rect
+      x="0"
+      y="0"
+      width="300"
+      height="380"
+      rx="40"
+      ry="40"
+      fill="url(#grad)"
+    />
+
+    <!-- Image -->
+    <image
+      href="./assets/images/img.jpg"
+      width="300"
+      height="380"
+      preserveAspectRatio="xMidYMid slice"
+      mask="url(#roundedMask)"
+    />
+
+    <!-- Optional gradient -->
+    <defs>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0078ff" />
+        <stop offset="100%" stop-color="#0056d2" />
+      </linearGradient>
+    </defs>
+  </svg>
+</div>
+
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'am Vraj Parekh</h1>
+                            <h3 class="home__subtitle">AI & DS Student</h3>
+                            <p class="home__description">AI & Data Science student specializing in machine learning, data analytics, and intelligent systems. Experienced in building real-world projects including a Visa Service React website, Expense Tracker application, Text Classification ML model, and a Rule-Based Voice Assistant. Passionate about solving problems using data-driven approaches and modern technologies.</p>
+                            <a href="#contact" class="button button--flex home__button">
+                                Contact Me<i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll Down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                         <!--SKILL-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-analytics skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Core AI & DS Skills</h1>
+                                   <span class="skills__subtitle">More than 2 years</span>
+                               </div>
+
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Machine Learning</h3>
+                                       <span class="skills__number">70%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__tab"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">SQL</h3>
+                                       <span class="skills__number">90%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__sql"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">R</h3>
+                                       <span class="skills__number">70%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__google"></span>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+                    
+                        <!--==================== SKILLS-2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                               <i class="uil uil-brackets-curly skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Web Developement</h1>
+                                   <span class="skills__subtitle">More than 2 years</span>
+                               </div>
+
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">CSS</h3>
+                                       <span class="skills__number">80%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__css"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">JavaScript</h3>
+                                       <span class="skills__number">70%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__js"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">WordPress</h3>
+                                       <span class="skills__number">65%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__wordpress"></span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </section>
+
+<!-- Projects -->
+<section class="portfolio section" id="portfolio">
+
+    <h2 class="section__title">PROJECTS</h2>
+    <span class="section__subtitle">A collection of projects I've worked on.</span>
+
+    <div class="portfolio__container container swiper">
+        <div class="swiper-wrapper">
+
+            <!-- Project 1 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./assets/images/project-1.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Spam Email Detection</h3>
+                    <p class="portfolio__description">
+                        Machine-learning-based spam email detection system with efficient text preprocessing,
+                        feature extraction, and accurate classification for real-world email filtering.
+                    </p>
+                    <a href="https://github.com/vrajparekh012/spam_email_detection"
+                       class="button button--flex button--small portfolio__button">
+                        Demo <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./assets/images/project-2.jpeg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">React Site</h3>
+                    <p class="portfolio__description">
+                        A React JS-based Visa Service System developed during a framework workshop
+                        for managing visa inquiries and air travel services.
+                    </p>
+                    <a href="https://github.com/vrajparekh012/Visa_sevice"
+                       class="button button--flex button--small portfolio__button">
+                        Demo <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./assets/images/project-3.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Rule-Based Voice Assistant</h3>
+                    <p class="portfolio__description">
+                        A Python-based voice assistant using predefined rules to automate tasks,
+                        answer queries, and control system operations.
+                    </p>
+                    <a href="https://github.com/vrajparekh012/Rule_Based_Voice_Assistant"
+                       class="button button--flex button--small portfolio__button">
+                        Demo <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./assets/images/project-4.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Data Visualization</h3>
+                    <p class="portfolio__description">
+                        A Python + Streamlit dashboard visualizing YouTube 2023 dataset
+                        using interactive charts for data-driven insights.
+                    </p>
+                    <a href="https://github.com/vrajparekh012/Data_Visualization"
+                       class="button button--flex button--small portfolio__button">
+                        Demo <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./assets/images/project-5.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Expense Tracker App</h3>
+                    <p class="portfolio__description">
+                        An Android app built using Java in Android Studio to track,
+                        categorize, and analyze daily expenses efficiently.
+                    </p>
+                    <a href="https://github.com/vrajparekh012/MyProject"
+                       class="button button--flex button--small portfolio__button">
+                        Demo <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./assets/images/project-6.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Text Classification ML Model</h3>
+                    <p class="portfolio__description">
+                        A machine learning model built in Python using the IMDB dataset
+                        to classify movie reviews as positive or negative.
+                    </p>
+                    <a href="https://github.com/vrajparekh012/ML"
+                       class="button button--flex button--small portfolio__button">
+                        Demo <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Swiper Controls -->
+        <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+
+        <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+</section>
+
+<!-- About Section -->
+    <section class="container py-5" id="about">
+      <div class="row mt-4 py-3">
+        <div class="col-12 d-flex flex-column text-center">
+          <h2>ABOUT</h2>
+          <h5 class="text-secondary fw-normal py-2 fst-italic">Learn more about me & my background.</h5>
+        </div>
+      </div>
+      <div class="row justify-content-md-end mt-5 pt-5">
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="./assets/images/about-img-2.jpg" alt="img">
+        </div>
+        <div class="col-9 col-md-5">
+          <h5>2021-2023</h5>
+          <h5>Higher Education and Career Growth</h5>
+          <p>I pursued my higher education in the science stream with a focus on mathematics at Phoenix School, Vadodara. During my time there, I successfully completed my 11th grade with a commendable 71% and my 12th grade with 52% in the board examinations. This academic journey strengthened my analytical and problem-solving skills, laying a solid foundation for my passion for technology</p>
+        </div>
+      </div>
+      <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+        <div class="col-9 col-md-5 text-md-end">
+          <h5>2023-Present</h5>
+          <h5>Professional Excellence and Continuous Learning</h5>
+          <p>I am currently pursuing a B.Tech in Artificial Intelligence and Data Science, a journey I began two years ago in 2023. My fascination with next-generation AI technologies has fueled my enthusiasm for this field, inspiring me to dive deeper into innovative concepts and practical applications.</p>
+        </div>
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="./assets/images/about-img-3.jpg" alt="img">
+        </div>
+      </div>
+      <div class="row justify-content-md-end mt-5 pt-5">
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="./assets/images/about-img-4.jpg" alt="img">
+        </div>
+        <div class="col-9 col-md-5">
+          <h5>Future</h5>
+          <h5>Continuing to Make a Difference</h5>
+          <p>I am committed to leveraging my skills and expertise to contribute to meaningful projects that have a positive impact on society.My passion drives me to develop strong analytical and technical skills to create impactful AI-driven solutions.such as AI-powered tools for education or sustainability, to make a meaningful difference in the industry.</p>
+        </div>
+      </div>  
+      
+      <div class="row justify-content-md-center mt-5 pt-5">
+        <div class="col-3 col-md-2 d-flex justify-content-center hire-text">
+          <div class="next-hire-circle">
+            <span>Your Next<br>Hire</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__buttons">
+        <a href="assets/CV.png" class="about__btn">
+          <i class="uil uil-download-alt button__icon"></i>
+          Download CV
+        </a>
+      </div>
+
+    </section>
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">You have a new project?</h2>
+                        <p class="project__description">Contact me  projects.</p>
+                        <a href="#contact" class="button button--flex button--white">Contact me
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                       
+                    </div>
+                    <!-- <img src="assets/img/project.png" alt="" class="project__img"> -->
+                </div>
+            </div>
+
+        </section>
+
+<!--==================== CONTACT ME ====================-->
+<section class="contact section" id="contact">
+    <h2 class="section__title">Contact me</h2>
+    <span class="section__subtitle">Get in touch</span>
+
+    <div class="contact__container container">
+        <!-- Left side - Contact Info -->
+        <div class="contact__info">
+            <div class="contact__information">
+                <i class="uil uil-envelope contact__icon"></i>
+                <div>
+                    <h3 class="contact__title">E-mail</h3>
+                    <span class="contact__subtitle">vrajparekh91@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class="uil uil-map-marker contact__icon"></i>
+                <div>
+                    <h3 class="contact__title">Location</h3>
+                    <span class="contact__subtitle">Vadodara, Gujarat</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right side - Form -->
+        <form action="" class="contact__form">
+            <div class="contact__inputs">
+                <div class="contact__content">
+                    <label class="contact__label">Name</label>
+                    <input type="text" class="contact__input" required>
+                </div>
+
+                <div class="contact__content">
+                    <label class="contact__label">E-mail</label>
+                    <input type="email" class="contact__input" required>
+                </div>
+            </div>
+
+            <div class="contact__content">
+                <label class="contact__label">Subject</label>
+                <input type="text" class="contact__input" required>
+            </div>
+
+            <div class="contact__content">
+                <label class="contact__label">Description</label>
+                <textarea name="message" rows="7" class="contact__input" required></textarea>
+            </div>
+
+            <button type="submit" class="button button--flex">
+                Send message
+                <i class="uil uil-message button__icon"></i>
+            </button>
+        </form>
+    </div>
+</section>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Vraj Parekh</h1>
+                    <span class="footer__subtitle">Artificial Intelligence & Data Science Engineer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#Skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.instagram.com/vrajparekh_12?igsh=dDh1MWg3c2xhMjJy" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://x.com/ParekhVraj45341" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; Vraj Parekh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
