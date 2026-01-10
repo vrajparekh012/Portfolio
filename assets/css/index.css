@@ -881,6 +881,7 @@ footer .social-icons a {
         width: 100%;
         max-width: 680px;
         padding: 2.2rem 1.8rem;
+        margin: 0 auto;
     }
 }
 
@@ -888,6 +889,7 @@ footer .social-icons a {
     .contact__form {
         padding: 1.8rem 1.2rem;
         border-radius: 1.25rem;
+        margin: 0 auto;
     }
     
     .contact__inputs {
@@ -1000,8 +1002,8 @@ footer .social-icons a {
 @media screen and (max-width: 800px) {
 
   body {
-    margin: 0;
-    padding-top: calc(var(--header-height) + 1rem);
+    margin: 0; /* remove bottom margin */
+    padding-top: calc(var(--header-height) + 1rem); /* push content down */
   }
 
   .header {
@@ -1022,21 +1024,16 @@ footer .social-icons a {
     column-gap: 0;
   }
 
-  /* Home Section */
-  .home__content {
-    grid-template-columns: 1fr 1fr; /* text left, image right */
-  }
-
-  .home__img {
-    justify-self: end;
-  }
-
   .home__title {
     font-size: 1.4rem;
   }
 
+  .home__content {
+    grid-template-columns: 0.35fr 3fr;
+  }
+
   .home__blob {
-    width: 220px;
+    width: 250px;
   }
 
   .home__social-icon {
@@ -1044,31 +1041,29 @@ footer .social-icons a {
   }
 
   .home__subtitle {
-    font-size: 1.1rem;
+    font-size: 24px;
   }
 
   .home__description {
-    font-size: 0.95rem;
+    font-size: 18px;
   }
 
   .home__button {
-    font-size: 1rem;
+    font-size: 20px;
   }
 
-  /* Skills */
   .skills__title {
     font-size: var(--normal-font-size);
   }
 
-  /* Project in Mind Section */
   .project__bg {
-    padding: 1.5rem 1rem;
-    margin: 0 1rem;
-    border-radius: 12px;
+    padding: 2rem 1rem;   /* reduce big padding */
+    margin: 0 1rem;      /* reduce full-width feel */
+    border-radius: 12px; /* soft look */
   }
 
   .project__title {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 
   .project__description {
@@ -1079,11 +1074,7 @@ footer .social-icons a {
     width: 160px;
   }
 
-  .project {
-    margin-bottom: 2rem;
-  }
-
-  /* Footer */
+  /* Footer fix for small devices */
   .footer__container {
     grid-template-columns: 1fr;
     text-align: center;
@@ -1099,7 +1090,27 @@ footer .social-icons a {
     font-size: 0.8rem;
     opacity: 0.7;
   }
+
+  .footer_bg {
+  background-color: var(--first-color-second);
+  padding: 2.5rem 1rem 1.5rem;
+  margin-top: 0;
 }
+
+.footer {
+  margin-bottom: 0;
+}
+
+body {
+  padding-bottom: 0;
+}
+
+/* Remove extra height gap under project */
+.project {
+  margin-bottom: 2rem;
+}
+}
+
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
@@ -1124,7 +1135,7 @@ footer .social-icons a {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 800px) {
     .container {
       margin-left: auto;
       margin-right: auto;
@@ -1306,4 +1317,3 @@ footer .social-icons a {
   width: 100%;
   text-align: center;
 }
-
