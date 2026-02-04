@@ -277,6 +277,18 @@ img {
 
 /*==================== HOME ====================*/
 
+.home__description {
+  margin-top: 0.75rem;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.home__proof {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
 .home__container {
   gap: 1rem;
 }
@@ -1316,4 +1328,137 @@ body {
   left: 0;
   width: 100%;
   text-align: center;
+}
+
+/* Extra Animation */
+.footer__social {
+  transition: transform 0.3s ease;
+}
+
+.footer__social:hover {
+  transform: translateY(-6px);
+}
+
+.project .button {
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0,120,255,0.5); }
+  70% { box-shadow: 0 0 0 18px rgba(0,120,255,0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,120,255,0); }
+}
+
+.nav__link {
+  position: relative;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--first-color);
+  transition: width 0.3s ease;
+}
+
+.nav__link:hover::after,
+.active-link::after {
+  width: 100%;
+}
+
+.contact__input:focus {
+  box-shadow: 0 0 0 4px rgba(0,120,255,0.15);
+}
+
+.contact__form button:active {
+  transform: scale(0.96);
+}
+
+#about .img::before {
+  animation: growLine 1.5s ease forwards;
+}
+
+@keyframes growLine {
+  from { height: 0; }
+  to { height: calc(100% + 140px); }
+}
+
+.portfolio__button .button__icon {
+  transition: transform 0.3s ease;
+}
+
+.portfolio__button:hover .button__icon {
+  transform: translateX(6px);
+}
+
+.skills__percentage {
+  animation: growBar 1.5s ease forwards;
+}
+
+@keyframes growBar {
+  from { width: 0; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.home__blob {
+  animation: float 5s ease-in-out infinite;
+}
+
+.home__subtitle::after {
+  content: "|";
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+body {
+  animation: pageEnter 0.8s ease-out;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.section {
+  padding-top: clamp(3rem, 6vw, 6rem);
+  padding-bottom: clamp(2rem, 4vw, 4rem);
+}
+
+.section:hover {
+  transform: translateY(-6px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
